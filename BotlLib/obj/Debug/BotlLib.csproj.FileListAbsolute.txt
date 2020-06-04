@@ -1,0 +1,9 @@
+C:\Users\yigit\source\repos\BotTestForms\BotlLib\bin\Debug\BotlLib.dll
+C:\Users\yigit\source\repos\BotTestForms\BotlLib\bin\Debug\BotlLib.pdb
+C:\Users\yigit\source\repos\BotTestForms\BotlLib\bin\Debug\MongoDB.Bson.dll
+C:\Users\yigit\source\repos\BotTestForms\BotlLib\bin\Debug\MongoDB.Bson.xml
+C:\Users\yigit\source\repos\BotTestForms\BotlLib\obj\Debug\BotlLib.csprojAssemblyReference.cache
+C:\Users\yigit\source\repos\BotTestForms\BotlLib\obj\Debug\BotlLib.csproj.CoreCompileInputs.cache
+C:\Users\yigit\source\repos\BotTestForms\BotlLib\obj\Debug\BotlLib.csproj.CopyComplete
+C:\Users\yigit\source\repos\BotTestForms\BotlLib\obj\Debug\BotlLib.dll
+C:\Users\yigit\source\repos\BotTestForms\BotlLib\obj\Debug\BotlLib.pdb

@@ -1,0 +1,17 @@
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\bin\Debug\BotTestForms.exe.config
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\bin\Debug\BotTestForms.exe
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\bin\Debug\BotTestForms.pdb
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\obj\Debug\BotTestForms.csprojAssemblyReference.cache
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\obj\Debug\BotTestForms.Form1.resources
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\obj\Debug\BotTestForms.Properties.Resources.resources
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\obj\Debug\BotTestForms.csproj.GenerateResource.cache
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\obj\Debug\BotTestForms.csproj.CoreCompileInputs.cache
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\obj\Debug\BotTestForms.exe
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\obj\Debug\BotTestForms.pdb
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\bin\Debug\MongoDB.Bson.dll
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\bin\Debug\MongoDB.Bson.xml
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\obj\Debug\BotTestForms.csproj.CopyComplete
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\obj\Debug\BotTestForms.TaskManagerForm.resources
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\obj\Debug\BotTestForms.ConfigrationForm.resources
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\bin\Debug\BotLib.dll
+C:\Users\yigit\source\repos\BotTestForms\BotTestForms\bin\Debug\BotLib.pdb

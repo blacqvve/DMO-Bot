@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotTestForms", "BotTestForms\BotTestForms.csproj", "{804C0621-57F1-4EF3-9C42-B477EF3DBB62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotLib", "BotlLib\BotLib.csproj", "{308E19A8-98A6-4619-9D31-D32C7FBE4805}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{804C0621-57F1-4EF3-9C42-B477EF3DBB62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{804C0621-57F1-4EF3-9C42-B477EF3DBB62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{804C0621-57F1-4EF3-9C42-B477EF3DBB62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{804C0621-57F1-4EF3-9C42-B477EF3DBB62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{308E19A8-98A6-4619-9D31-D32C7FBE4805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{308E19A8-98A6-4619-9D31-D32C7FBE4805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{308E19A8-98A6-4619-9D31-D32C7FBE4805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{308E19A8-98A6-4619-9D31-D32C7FBE4805}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57D84B4D-C442-4997-9BD2-5BC4B16FE05E}
+	EndGlobalSection
+EndGlobal
