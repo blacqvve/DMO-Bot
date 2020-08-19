@@ -1,2 +1,2 @@
 # DMO-Bot
-A bot application for Digimon Masters Online game
+A bot application for Digimon Masters Online game. WIP.
