@@ -19,7 +19,7 @@ namespace BotTestForms
 {
      public partial class Form1 : Form
      {
-          
+
           private static bool isActive = false;
           private static bool isActiveInventory = false;
           private static bool isHunting = false;
@@ -84,13 +84,15 @@ namespace BotTestForms
 
           private static TaskManagerForm taskmgr;
 
+          private Thread _activeTread;
+
           private static IntPtr h;
           private static IntPtr child;
           private static Color manualPixel;
           private Process p;
           public Form1()
           {
-               Message m = new Message("test");
+               Message m;
                InitializeComponent();
                Process[] processes = Process.GetProcesses();
                string[] pnames = new string[processes.Length];
@@ -99,13 +101,13 @@ namespace BotTestForms
                Form1.taskmgr = new TaskManagerForm(pnames);
                ConfigrationForm confForm = new ConfigrationForm();
                confForm.Show();
-               
+
                try
                {
                     this.p = Process.GetProcessesByName("GDMO")[0];
                     this.p.WaitForInputIdle();
-                    Form1.h = this.p.MainWindowHandle;
-                    Form1.child = WindowsAPI.FindWindowEx(Form1.h, IntPtr.Zero, "Edit", (string)null);
+                    h = this.p.MainWindowHandle;
+                    child = WindowsAPI.FindWindowEx(Form1.h, IntPtr.Zero, "Edit", (string)null);
                     if (!(m.message != "null"))
                          return;
                     int num = (int)MessageBox.Show(string.Format(m.message, (object)Environment.NewLine), "Notice", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -185,12 +187,11 @@ namespace BotTestForms
           }
           private async void iterate1()
           {
-
                while (isActive)
                {
-
                     WindowsAPI.SendMessage(Form1.h, 257U, (IntPtr)9, IntPtr.Zero);
-                    Thread.Sleep(100);
+                    WindowsAPI.SendMessage(Form1.h, 257U, 0x70, IntPtr.Zero);
+                    Thread.Sleep(3000);
                }
                Application.ExitThread();
           }
@@ -272,6 +273,7 @@ namespace BotTestForms
           {
                Thread thread1 = new Thread(new ThreadStart(this.iterate1));
                isActive = true;
+               _activeTread = thread1;
                thread1.Start();
           }
 
@@ -287,8 +289,8 @@ namespace BotTestForms
 
           private void button2_Click(object sender, EventArgs e)
           {
-               Thread thred = Thread.CurrentThread;
-               thred.Abort();
+               isActive = false;
+               _activeTread.Abort();
           }
 
           private void btnSave_Click(object sender, EventArgs e)
@@ -299,7 +301,7 @@ namespace BotTestForms
           private void readConfigButton_Click(object sender, EventArgs e)
           {
                Configuration.ReadFromFile();
-               int num = (int)MessageBox.Show(string.Join(",",Configuration.configrationString), "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+               int num = (int)MessageBox.Show(string.Join(",", Configuration.configrationString), "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
           }
      }
 }
