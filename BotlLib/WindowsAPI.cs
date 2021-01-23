@@ -16,6 +16,38 @@ namespace BotLib
 {
      public class WindowsAPI
      {
+          private const uint WM_KEYDOWN = 256;
+          private const uint WM_KEYUP = 257;
+          private const uint WM_SYSCOMMAND = 24;
+          private const uint SC_CLOSE = 83;
+          private const uint WM_ACTIVATEAPP = 28;
+          private const uint WM_NCACTIVATE = 134;
+          private const uint WM_ACTIVATE = 6;
+          private const uint WM_IME_SETCONTEXT = 641;
+          private const uint WM_IME_NOTIFY = 642;
+          private const uint WM_CHAR = 258;
+          private const uint WM_GETTEXTLENGTH = 14;
+          private const uint EM_GETSEL = 176;
+          private const uint EM_GETRECT = 178;
+          private const uint EM_GETFONT = 49;
+          private const uint EM_LINEFROMCHAR = 201;
+          private const uint EM_CHARFROMPOS = 533;
+          private const uint EM_POSFROMCHAR = 532;
+          private const uint EM_LINELENGTH = 193;
+          private const uint WM_SETTEXT = 12;
+          private const uint WM_WINDOWPOSCHANGING = 70;
+          private const uint SWP_NOSIZE = 1;
+          private const uint SWP_NOMOVE = 2;
+          private const uint SWP_NOZORDER = 4;
+          private const uint SWP_NOREDRAW = 8;
+          private const uint SWP_NOACTIVATE = 16;
+          private const uint SWP_FRAMECHANGED = 32;
+          private const uint SWP_SHOWWINDOW = 64;
+          private const uint SWP_HIDEWINDOW = 128;
+          private const uint SWP_NOCOPYBITS = 256;
+          private const uint SWP_NOOWNERZORDER = 512;
+          private const uint SWP_NOSENDCHANGING = 1024;
+
           [DllImport("user32")]
           [return: MarshalAs(UnmanagedType.Bool)]
           private static extern bool EnumChildWindows(

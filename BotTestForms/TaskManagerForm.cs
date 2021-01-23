@@ -34,7 +34,8 @@ namespace BotTestForms
 
                if (!string.IsNullOrEmpty(taskName))
                {
-                    Form1.processName = taskName;
+                    Form1 parent = (Form1)Owner;
+                    parent.TaskName = taskName;
                     Close();
                }
                else
